@@ -31,3 +31,13 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
+
+# Removing client->scripts->.sencha workspace
+client/scripts/.sencha
+
+# Removing ext code do not want to piss off license people
+client/ext
+
+# Ignoring webstorm
+.idea
+

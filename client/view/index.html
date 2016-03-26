@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html manifest="">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>Ext 6 - Babel - ECM6 </title>
+
+    <script>
+        "use strict";
+
+        var _ = undefined;
+        function fakeAjax(opt, cb) {
+            var r = Math.floor(Math.random()*5000);
+            console.log('issuing ajax request, r=' + r);
+            setTimeout(()=>{cb.call(_, _, 'Response 1')}, r);
+        }
+
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="ext/resources/theme-cupertino-all-debug.css">
+
+    <script src="ext/ext-modern-all-debug.js"></script>
+    <script src="ext/charts-debug.js"></script>
+    <script src="scripts/app.js"></script>
+</head>
+<body></body>
+</html>

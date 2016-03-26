@@ -1,0 +1,3 @@
+This is a project demonstrating the new ECMA6 Javascript features along with the latest version of ExtJS.  It
+also illustrates how I setup a sencha project (Sencha Command is a roadblock to using most common JS tools and that is
+why I prefer not to use it and hide that build process within a grunt task itself)

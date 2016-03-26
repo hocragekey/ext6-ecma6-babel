@@ -1,0 +1,27 @@
+{
+  "name": "ext6-ecma6-babel",
+  "version": "1.0.0",
+  "description": "Test application showing how to implement ECMA6 with ExtJS 6 and Babel",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hocragekey/ext6-ecma6-babel.git"
+  },
+  "keywords": [
+    "extjs",
+    "babel",
+    "ECMA6"
+  ],
+  "author": "Jim Lebonitte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hocragekey/ext6-ecma6-babel/issues"
+  },
+  "homepage": "https://github.com/hocragekey/ext6-ecma6-babel#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}

@@ -45,7 +45,7 @@ Ext.define('app.view.Sync', {
         ]
     },
 
-    /* ----- helper functions -------*/
+    /* ----- example async function -------*/
     callAjax: function (url) {
         return new Promise(function (resolve, reject) {
             fakeAjax({}, function (err, res) {

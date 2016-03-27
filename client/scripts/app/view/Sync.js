@@ -27,9 +27,7 @@ Ext.define('app.view.Sync', {
                             width: 350,
                             margin: 20,
 
-                            handler: function () {
-                                this.up('#sync').callSync();
-                            }
+                            handler: (b) => b.up('#sync').callSync()
                         },
                         {
                             xtype: 'button',
@@ -38,9 +36,7 @@ Ext.define('app.view.Sync', {
                             width: 350,
                             margin: 20,
 
-                            handler: function () {
-                                this.up('#sync').callParallel();
-                            }
+                            handler: (b) => b.up('#sync').callParallel()
                         }
                     ]
                 },

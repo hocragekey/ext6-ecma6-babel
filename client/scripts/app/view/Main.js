@@ -10,6 +10,15 @@ Ext.define('app.view.Main', {
         },
         {
             title: 'Arrow Functions'
+        },
+        {
+            title: 'Object Deconstruction'
+        },
+        {
+            title: 'Array Spread Operators'
+        },
+        {
+            title: 'Observables'
         }
     ]
 });

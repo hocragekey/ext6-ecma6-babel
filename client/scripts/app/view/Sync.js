@@ -4,60 +4,59 @@ Ext.define('app.view.Sync', {
 
     xtype: 'sync',
 
-    config: {
-        layout: 'fit',
-        itemId: 'sync',
+    layout: 'fit',
+    itemId: 'sync',
 
-        items: [
-            {
-                xtype: 'container',
-                layout: 'vbox',
-                width: '100%',
-                height: 800,
-                items: [
-                    {
-                        xtype: 'container',
-                        layout: 'hbox',
-                        width: '100%',
-                        height: 85,
+    items: [
+        {
+            xtype: 'container',
+            layout: 'vbox',
+            width: '100%',
+            height: 800,
+            items: [
+                {
+                    xtype: 'container',
+                    layout: 'hbox',
+                    width: '100%',
+                    height: 60,
 
-                        items: [
-                            {
-                                xtype: 'button',
-                                itemId: 'sbutton',
-                                text: '3 Sync Requests',
-                                width: 350,
-                                margin: 20,
+                    items: [
+                        {
+                            xtype: 'button',
+                            itemId: 'sbutton',
+                            text: '3 Sync Requests',
+                            width: 350,
+                            margin: 20,
 
-                                handler: function () {
-                                    this.up('#sync').callSync();
-                                }
-                            },
-                            {
-                                xtype: 'button',
-                                itemId: 'pbutton',
-                                text: '3 Parallel Requests',
-                                width: 350,
-                                margin: 20,
-
-                                handler: function () {
-                                    this.up('#sync').callParallel();
-                                }
+                            handler: function () {
+                                this.up('#sync').callSync();
                             }
-                        ]
-                    },
-                    {
-                        xtype: 'panel',
-                        itemId: 'ocont',
-                        title: 'Console Output',
-                        height: 600,
-                        width: 600
-                    }
-                ]
-            }
+                        },
+                        {
+                            xtype: 'button',
+                            itemId: 'pbutton',
+                            text: '3 Parallel Requests',
+                            width: 350,
+                            margin: 20,
 
-        ]
-    },
+                            handler: function () {
+                                this.up('#sync').callParallel();
+                            }
+                        }
+                    ]
+                },
+                {
+                    xtype: 'panel',
+                    itemId: 'ocont',
+                    title: 'Console Output',
+                    height: 600,
+                    width: 600,
+                    margin: 20
+                }
+            ]
+        }
+
+    ],
 
     /*
      * Makes three asynchronous calls synchronously and then handles the actions in order.
@@ -122,7 +121,7 @@ Ext.define('app.view.Sync', {
         console.log = function (str) {
             ocont.add({
                 xtype: 'label',
-                html: str
+                html: str + '<br/>'
             })
         }
     },

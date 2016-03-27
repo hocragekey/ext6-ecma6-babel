@@ -1,18 +1,15 @@
 Ext.define('app.view.Main', {
-    extend: 'Ext.TabPanel',
+    extend: 'Ext.tab.Panel',
 
-    config: {
-        layout: 'fit',
+    layout: 'fit',
 
-        items: [
-            {
-                title: 'Sync + Generators',
-                xtype: 'sync'
-            },
-            {
-                title: 'Arrow Functions'
-            }
-        ]
-
-    }
+    items: [
+        {
+            title: 'Sync + Generators',
+            xtype: 'sync'
+        },
+        {
+            title: 'Arrow Functions'
+        }
+    ]
 });

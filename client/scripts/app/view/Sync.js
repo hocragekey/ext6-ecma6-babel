@@ -3,7 +3,6 @@ Ext.define('app.view.Sync', {
     extend: 'Ext.Container',
 
     xtype: 'sync',
-
     layout: 'fit',
     itemId: 'sync',
 
@@ -51,7 +50,8 @@ Ext.define('app.view.Sync', {
                     title: 'Console Output',
                     height: 600,
                     width: 600,
-                    margin: 20
+                    margin: 20,
+                    autoScroll: true
                 }
             ]
         }
@@ -127,7 +127,7 @@ Ext.define('app.view.Sync', {
     },
 
     /*
-     * Giving output log
+     * Giving output log back to the console
      */
     returnLog: function () {
         console.log = this.oldLog;

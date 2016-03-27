@@ -19,9 +19,9 @@ Ext.define('app.util.Runner', {
                         darr[idx] = resp;
 
                         c++;
-                        if(c === v.length) {
+                        if (c === v.length) {
                             console.log('all urls hit');
-                            var p = new Promise(function(resolve, reject) {
+                            var p = new Promise(function (resolve, reject) {
                                 resolve(darr);
                             });
 
@@ -29,8 +29,8 @@ Ext.define('app.util.Runner', {
                         }
                     };
 
-                v.map((cv, i) => cv.then( (resp) => pfqn.call(undefined, i, resp )));
-            //Handles single promises
+                v.map((cv, i) => cv.then((resp) => pfqn.call(undefined, i, resp)));
+                //Handles single promises
             } else {
                 if (!ret.done) {
                     ret.value.then(iterate);
